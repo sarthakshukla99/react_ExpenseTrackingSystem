@@ -1,4 +1,4 @@
-import ExpenseItem from "./components/ExpenseItem";
+import Expenses from "./components/Expenses";
 
 function App() {
 
@@ -26,9 +26,7 @@ function App() {
 
     return(
         <div className="App">
-            {expenses.map((expense)=>(
-                <ExpenseItem title={expense.title} amount={expense.amount} date={expense.date}/>
-            ))}
+            <Expenses expenses={expenses}/>
         </div>
     );
 }
