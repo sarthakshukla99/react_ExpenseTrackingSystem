@@ -17,8 +17,8 @@ function NewExpense(props) {
         setFormVisibility(true)
     }
 
-    const handleCancelForm = (bool) => {
-        setFormVisibility(bool)
+    const handleCancelForm = () => {
+        setFormVisibility(false)
     }
 
     return (
